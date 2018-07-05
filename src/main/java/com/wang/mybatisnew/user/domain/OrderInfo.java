@@ -62,8 +62,7 @@ public class OrderInfo implements Serializable {
 
     @Override
     public String toString() {
-        return "OrderInfo{" +
-        ", id=" + id +
+        return "OrderInfo{id=" + id +
         ", orderName=" + orderName +
         ", orderAddress=" + orderAddress +
         "}";
