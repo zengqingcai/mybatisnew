@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author wly
- * @since 2018-07-05
+ * @since 2018-07-09
  */
 @Service
 public class OrderInfoServiceImpl extends ServiceImpl<OrderInfoDao, OrderInfo> implements MPOrderInfoService {

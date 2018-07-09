@@ -1,5 +1,7 @@
 package com.wang.mybatisnew.user.domain;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.IdType;
@@ -12,7 +14,7 @@ import java.io.Serializable;
  * </p>
  *
  * @author wly
- * @since 2018-07-05
+ * @since 2018-07-09
  */
 @TableName("order_info")
 public class OrderInfo implements Serializable {
@@ -62,7 +64,8 @@ public class OrderInfo implements Serializable {
 
     @Override
     public String toString() {
-        return "OrderInfo{id=" + id +
+        return "OrderInfo{" +
+        ", id=" + id +
         ", orderName=" + orderName +
         ", orderAddress=" + orderAddress +
         "}";

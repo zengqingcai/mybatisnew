@@ -1,6 +1,7 @@
 package com.wang.mybatisnew.user.controller;
 
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.wang.mybatisnew.user.domain.User;
 import com.wang.mybatisnew.user.service.MPUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,13 +35,16 @@ public class UserController {
         // 查
         System.out.println( userService.selectById(user.getId()));
         // 改
-        user.setUserAddress("北美K3");
+        user.setUserAddress("北美K4");
+        userService.updateById(user);
         // 查
         System.out.println( userService.selectById(user.getId()));
         // 删
         userService.deleteById(user.getId());
         // 查
         System.out.println( userService.selectById(user.getId()));
+        // 分页查询
+        System.out.println(userService.selectPage(new Page<>(1,3),null).getRecords());
         return "done";
     }
 }
