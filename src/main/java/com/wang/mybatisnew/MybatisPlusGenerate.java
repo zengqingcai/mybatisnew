@@ -12,6 +12,7 @@ import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 /**
  * mybatis代码生成工具
  * 官网：http://mp.baomidou.com
+ *
  * @Author wly
  * @Date 2018/7/4 14:10
  */
@@ -47,7 +48,9 @@ public class MybatisPlusGenerate {
                 // 命名策略：实体的类名和属性名按下划线转驼峰 user_info -> userInfo
                 .setNaming(NamingStrategy.underline_to_camel)
                 // controller生成@RestCcontroller
-                .setRestControllerStyle(true));
+                .setRestControllerStyle(true)
+                // 要操作的表名
+                .setInclude("product_info"));
         // 执行生成
         mpg.execute();
 

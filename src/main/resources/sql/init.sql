@@ -15,3 +15,11 @@ CREATE TABLE `user` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8 COMMENT='用户表';
 
+-- 商品表，测试布尔类型
+CREATE TABLE `product_info` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '标识',
+  `product_id` bigint(20) DEFAULT NULL COMMENT '商品ID',
+  `product_name` varchar(255) DEFAULT NULL COMMENT '商品名称',
+  `is_self` tinyint(1) DEFAULT '0' COMMENT '是否是自营：0.自营 1.三方',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
