@@ -29,7 +29,7 @@ public class MybatisPlusGenerate {
                 // 指定作者
                 .setAuthor("wly")
                 // 设置Controller、Service、ServiceImpl、Dao、Mapper文件名称，%s是依据表名转换来的
-                .setControllerName("%sController").setServiceName("MP%sService").setServiceImplName("%sServiceImpl").setMapperName("%sDao").setXmlName("%sMapper"));
+                .setControllerName("%sController").setServiceName("%sService").setServiceImplName("%sServiceImpl").setMapperName("%sDao").setXmlName("%sMapper"));
         // ================================数据源配置============================
         mpg.setDataSource(new DataSourceConfig()
                 // 用户名、密码、驱动、url
